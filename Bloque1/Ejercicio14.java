@@ -6,7 +6,10 @@ public class Ejercicio14 {
         dineroActual = dineroActual + dineroIngreso;
         //Preguntamos el dinero de ingreso y lo sumamos 
         double dineroPedir = Double.parseDouble(System.console().readLine("Escribe el dinero que quieres retirar: "));
+        //preguntamos el dinero que quiere retirar
         dineroActual = dineroActual - dineroPedir;
+        //calculamos el dinero actual
         System.out.println("Tienes en la cuenta: " + dineroActual);
+        //lo mostramos por consola
     }
 }
