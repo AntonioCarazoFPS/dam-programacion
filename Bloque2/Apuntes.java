@@ -26,5 +26,16 @@ public class Apuntes {
         //20-100
         int num7 = (int)(Math.random()*8)+12;
         //12-19
+        
+        //BUCLE FOR (yo determino cuántas repeticiones)
+        for(3){
+            System.out.println("Hola");
+        }
+        //for (crear variables; mientras; incremento) Abajo ejemplo:
+        for(int i = 0; i<5 ; i++ ){
+            System.out.println("Hola");
+        }
+        //fuera de aqui si hemos creado la variable en el for no se queda guardada
+        
     }
 }
