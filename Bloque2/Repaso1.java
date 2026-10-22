@@ -3,13 +3,16 @@ public class Repaso1 {
         for(int i = 10; i >= 0; i--){
             switch (i) {
                 case 5:
-                   System.out.println("Motores encendidos"); 
+                    System.out.println("Motores encendidos"); 
                     break;
-                case 3:
-                    System.out.println("Comprobacion final");
-                    break;
-
-}
+                    case 3:
+                        System.out.println("Comprobacion final");
+                        break;
+                        case 0:
+                            System.out.println("Despegue");
+                            continue;
+                        }
+                        System.out.println(i);
 }
 }
 }
