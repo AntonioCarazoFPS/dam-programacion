@@ -32,8 +32,9 @@ public class Repaso6 {
             case 6:
             cara6++;     
             break;
-            System.out.println("La cara 1 ha salido " + cara1 + "veces , la cara 2 ha salido " + cara2 + " veces , la cara 3 ha salido " + cara3 + " veces , la cara 4 ha salido " + cara4 + " veces , la cara 5 ha salido " + cara5 + " veces , la cara 6 ha salido " + cara6);
         }
+        System.out.println("La cara 1 ha salido " + cara1 + " veces , la cara 2 ha salido " + cara2 + " veces , la cara 3 ha salido " + cara3 + " veces , la cara 4 ha salido " + cara4 + " veces , la cara 5 ha salido " + cara5 + " veces , la cara 6 ha salido " + cara6);
+        
         }
        }
     }
