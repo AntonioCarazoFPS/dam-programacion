@@ -10,25 +10,29 @@ public class Repaso8 {
        double totalSinIva = 0;
        double IVA = 0;
        double total = 0;
+       double totalIVA = 0;
        for(int i = 1; i <= 5; i++){
            producto1 = Double.parseDouble(System.console().readLine("Escribe el precio sin IVA: "));
-           categoría = Integer.parseInt(System.console().readLine("Escribe el numero de categoria"));
+           categoría = Integer.parseInt(System.console().readLine("Escribe el numero de categoria: "));
            totalSinIva = totalSinIva + producto1;
            switch(categoría){
             case 1:
                 IVA = producto1 * 0.04;
-                total = total+ (producto1 + IVA);
+                total = total + (producto1 + IVA);
+                totalIVA = totalIVA + IVA;
                 break;
-            case 2:
-                IVA = producto1 * 0.04;
-                total = total+ (producto1 + IVA);
-                break;
-            case 3:
-                IVA = producto1 * 0.04;
-                total = total+ (producto1 + IVA);
+                case 2:
+                    IVA = producto1 * 0.10;
+                    total = total + (producto1 + IVA);
+                    totalIVA = totalIVA + IVA;
+                    break;
+                    case 3:
+                        IVA = producto1 * 0.21;
+                        total = total + (producto1 + IVA);
+                        totalIVA = totalIVA + IVA;
                 break;
            }
        }
-       System.out.println("El total a pagar sin IVA es " + producto1 + " lo que hay que pagar de IVA es " + IVA + " en total ha");
+       System.out.println("El total a pagar sin IVA es " + totalSinIva + " lo que hay que pagar de IVA es " + totalIVA + " en total ha pagar es " + total);
     }
 }
