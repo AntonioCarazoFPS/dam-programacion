@@ -7,6 +7,15 @@ public class Repaso11 {
         números introducidos por el usuario no son iguales, y 
         entonces ya muestra todos los números que hay entre ambos.
         */
-       
+       int numero1 = Integer.parseInt(System.console().readLine("Escribe el primer numero: "));
+       int numero2 = Integer.parseInt(System.console().readLine("Escribe el segundo numero: "));
+        if (numero1 != numero2) {
+            while(numero1 < numero2){
+                numero1++;
+                System.out.println(numero1);
+            }
+        } else {
+            System.out.println("Los dos numeros son iguales: ");
+        }
     }
 }

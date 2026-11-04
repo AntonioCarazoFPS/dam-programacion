@@ -64,9 +64,23 @@ static void dos(){
     System.out.println(numMitad + " la mitad es " + mitad);
    }
    static void cuatro(){
-    
+    int numAleatorio = Integer.parseInt(System.console().readLine("Escribe hasta que numero quieres que se genere el numero aleatorio:"));
+    numAleatorio++;
+    int numeroAleatorio = (int) (Math.random()*numAleatorio)+1;
+    System.out.println("Tu numero aleatorio es " + numeroAleatorio);
    }
    static void cinco(){
-
+    int numPrimo = Integer.parseInt(IO.readln("Escribe el numero que quieres comprobar si tiene primos "));
+    int cantidadDivisible = 0;
+    for (int i = 1; i <= numPrimo; i++){
+        if(numPrimo%i==0){
+        cantidadDivisible++;
+        }
+    }
+    if(cantidadDivisible>2){
+        System.out.println("No es primo");
+    } else {
+        System.out.println("Es primo");
+    }
    }
 }
